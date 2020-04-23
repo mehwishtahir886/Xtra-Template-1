@@ -1,0 +1,241 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+.active::before{
+    content:"";
+    position:absolute;
+    width:100% !important;
+    height:5%;
+    background:#7BEFB1;
+    top:0;
+}
+.wrapper
+{
+	width: 100%;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: 10vh 20vh 100vh;
+	grid-row-gap: 30px;
+}
+.head
+{
+	width: 100%;
+	height: 10vh;
+	background: linear-gradient(to bottom,#63538E,#4B387D);
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.head h1
+{
+    color: #7BEFB1;
+    padding:2% 25%;
+    box-sizing: border-box;
+}
+.right-sec
+{
+	width: 100%;
+	display:flex;
+	align-items: center; 
+	justify-content: flex-end;
+	padding:0 25%;
+	box-sizing: border-box;
+}
+.head .right-sec i:nth-child(1)
+{
+	color: white;
+	font-size: 1rem;
+	display: grid;
+	justify-items:center;
+}
+.head .right-sec i:nth-child(2)
+{
+	color:  rgba(255,255,255,0.5);
+}
+.head h4
+{
+	color: rgba(255,255,255,0.5);
+	font-weight: bolder;
+    
+}
+.contacts
+{
+	width: 80%;
+	position: relative;
+	left:10%;
+	height: 100%;
+	/*border:1px solid black;*/
+	display: flex;
+	justify-content: space-between;
+
+}
+.contacts .contact-box
+{
+	width: 30%;
+	height: 80%;
+	/*border:1px solid black;*/
+    position: relative;
+    top:10%;
+}
+.contacts .contact-box h1,p
+{
+	padding-left:6%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.contacts .contact-box h1
+{
+	color: #443178;
+
+}
+.contacts .contact-box p
+{
+	color: grey;
+	padding-left: 22%;
+	line-height: 1.5rem;
+		box-sizing: border-box;
+}
+.contacts .contact-box i
+{
+	color: white;
+	font-size: 1.4rem;
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	background-color: #443178;
+	text-align: center;
+	line-height: 7.5vh;
+}
+.form
+{
+	width: 80%;
+	position: relative;
+	left:10%;
+	border:1px solid black;
+	height: 80%;
+	display: grid;
+	grid-template-rows: 60vh 20vh;
+	background-color: #7BEFB1;
+
+}
+.form h2
+{
+	color: #443178;
+	margin-bottom: 10px;
+}
+.form .f1
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.form .f1 form
+{
+	width: 45%;
+	height: 95%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+}
+.form .f1 form input
+{
+	width: 47%;
+	height: 45px;
+	background-color: #443178;
+	color: white;
+	border: none;
+	outline: none;
+    
+	
+}
+.form .f1 form textarea
+{
+	width: 99.5%;
+	height: 150px;
+	background-color: #443178;
+	color: white;
+	border: none;
+	outline: none;
+}
+::placeholder
+{
+	padding: 2% 3%;
+	font-size: 0.9rem;
+	box-sizing: border-box;
+	color: rgba(255,255,255,0.6);
+	font-weight: bold;
+}
+.form .f1 form button
+{
+	width: 100px;
+	height: 50px;
+	background-color: #443178;
+	color: white;
+	border: none;
+	outline: none;
+}
+.form .f1 form button:hover
+{
+	background-color: transparent;
+	color:  #443178;
+	border:2px solid  #443178;
+	cursor: pointer;
+}
+.form .f1 .map-img
+{
+	width: 45%;
+	height: 90%;
+}
+.form .f1 .map-img img
+{
+	width: 100%;
+	height: 100%;
+}
+.form .call-us
+{
+	width: 100%;
+	height: 100%;
+	background-color:#443178;
+	color: white;
+	text-align: center;
+	transition: all 0.75s linear;
+}
+.form .call-us i
+{
+	color: #443178;
+	background-color: white;
+	display: inline-block;
+	width: 3rem;
+	height:  3rem;
+	line-height: 6vh;
+	border-radius: 50%;
+	position: relative;
+	margin-top:4%;
+	
+}
+.form .call-us:hover
+{
+	letter-spacing: 0.2rem;
+	color: rgba(255,255,255,0.8);
+	cursor: pointer;
+}
+.form .f1 .map-img .fa-map-marker-alt
+{
+	color:#443178;
+	font-size: 2.5rem;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	bottom:85%;
+	left:50%;
+}
+.form .f1 .map-img:hover
+{
+   cursor: grab;
+}
